@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lobster&family=Pacifico&display=swap');
+body {
+    margin: 0;
+    width: 100vw;
+      height: 100vh;
+    position: relative;
+  }
+  
+  canvas {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+.title {
+    font-family: 'Lobster';
+    font-size: 4em;
+    color: aliceblue;
+}
+
+.button-text {
+    font-family: 'Pacifico';
+    color:seagreen;
+    font-size: 2em;
+}
+
+  /* .title {
+    position: absolute;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+  
+    font-family: 'Helvetica';
+    line-height: 100vh;
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: #ccc;
+    text-align: center;
+  } */
+

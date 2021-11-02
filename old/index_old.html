@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="min-h-screen bg-gray-800 grid place-items-center p-4">
+    <audio id="myAudio">
+        <!-- <source src="horse.ogg" type="audio/ogg"> -->
+        <source src="/assets/sounds/bgaudio.mp3"  type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+    <div class="flex flex-col justify-center">
+        <h1 class="title">Welcome, Dr. Feynman</h1>
+        <button class="bg-blue-300 p-4 m-9 rounded button-text" id="button" onclick="playAudio()">Open The Box</button>
+        <button class="bg-green-500 active:bg-green-700 ...">Some</button>
+
+
+    </div>
+    
+
+
+    <canvas id="canvas"></canvas>
+
+      <script src="script.js"></script>
+
+</body>
+</html>

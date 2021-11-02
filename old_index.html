@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Doctor </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+<!-- Code for gradient "bg-gradient-to-r from-purple-400 via-pink-500 to-red-500" -->
+<body id='app' class=" gradientbg grid h-screen  justify-center items-center clickoff">
+    <lottie-player id='circularBg' class="" src="https://assets10.lottiefiles.com/packages/lf20_8tslfs9x.json"  background="transparent"  speed="1"  style="position: absolute; z-index: -1; width: 100%; width: 100vw;"  loop autoplay></lottie-player>
+    <lottie-player id='confettiFullScreen' class="" src="https://assets10.lottiefiles.com/private_files/lf30_kvdn44jg.json"  background="transparent"  speed="1"  style="position: absolute; z-index: 1; width: 100%; width: 100vw;"  loop autoplay></lottie-player>
+    <lottie-player id='confettiRight' class="" src="https://assets2.lottiefiles.com/packages/lf20_rovf9gzu.json"  background="transparent"  speed="1"  style="position: absolute; z-index: -1; width: 100%; width: 100vw;"  loop autoplay></lottie-player>
+    <lottie-player id='crackers' class="displayoff" src="https://assets10.lottiefiles.com/packages/lf20_a8czjo3v.json"  background="transparent"  speed="1"  style="position: absolute; z-index: 2; width: 100%; width: 100vw;"  loop autoplay></lottie-player>
+    <lottie-player id='giftBox' class="" src="https://assets9.lottiefiles.com/packages/lf20_8iczykai.json"  background="transparent"  speed="1"  style="position: absolute; z-index: 2; width: 20%; width: 20vw;"  autoplay></lottie-player>
+    
+    <div class="bg-pink-300 container m-auto  p-8 shadow-xl rounded animate__animated animate__delay-1s animate__zoomInDown "> 
+        <div class="bg-pink-200 m-auto text-dark rounded-lg  shadow-xl px-9 py-3 m-6 clickon">
+            <h1 class="header text-5xl">Welcome <br>Dr. __temp_name__,</h1>
+            <p class="subtext text-3xl py-3">Thank you for your patronage</p>
+            <p class="text-4xl py-5 subtext">- Wallace Pharmaceuticals</p>
+            <p></p>
+        </div>
+        <button  id="btn" v-on:click="toggleAudio()" class="bg-pink-400 rounded text-white font-bold hover:bg-pink-500 p-2 my-5 animate__animated animate__heartBeat animate__delay-5s animate__infinite clickon">
+            Open My Website
+        </button>
+        <div id="animContainer"></div>
+        <div id="siteContainer" class="clickon">
+            <iframe id="siteFrame" src="__temp_url__" frameborder="0" width="100%" height="300vw" ></iframe>
+        </div>
+    </div>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="../script.js"></script>
+</body>
+</html>
