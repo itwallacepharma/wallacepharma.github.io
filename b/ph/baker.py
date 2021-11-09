@@ -22,7 +22,8 @@ def main():
     for i, j in zip(df.user_name, df.user_url):
         with open('template.html', 'r') as f:
             body = f.read()
-        file_name = f"{i.lower().replace(' ', '_')}.html"
+        file_name = f"{i.lower().replace(' ', '_').replace('.', '_')}.html"
+        j = str(j.replace(" ", ""))
         body = replaceTemp(body, i, j)
         saveFile(body,file_name)
         # userBaseUrl = f"https://itwallacepharma.github.io/web/b/ph/{file_name}"
