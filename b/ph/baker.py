@@ -14,16 +14,20 @@ def saveFile(body,file_name):
     with open(file_name, 'x') as f:
         f.write(body)
 
+
 def main():
     # Read the template file
-    df = pd.read_csv('../../../data/ph_dr_websites_nov.csv')
+    # userBaseUrlList = []
+    df = pd.read_csv('../../../data/ph_dr_websites_nov_v2.csv')
     for i, j in zip(df.user_name, df.user_url):
         with open('template.html', 'r') as f:
             body = f.read()
         file_name = f"{i.lower().replace(' ', '_')}.html"
         body = replaceTemp(body, i, j)
         saveFile(body,file_name)
-
+        # userBaseUrl = f"https://itwallacepharma.github.io/web/b/ph/{file_name}"
+        # userBaseUrlList.append(userBaseUrl)
+    # pd.DataFrame(userBaseUrlList).to_csv('userBaseUrlList.csv')
 main()
 
 
