@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Doctor </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../style.css">
+
+</head>
+<!-- Code for gradient "bg-gradient-to-r from-purple-400 via-pink-500 to-red-500" -->
+<body id='app' class=" gradientbg grid h-screen  justify-center items-center clickoff">
+    <lottie-player id='circularBg' class="" src="https://assets10.lottiefiles.com/packages/lf20_8tslfs9x.json"  background="transparent"  speed="1"  style="position: absolute; z-index: -1; width: 100%; width: 100vw;"  loop autoplay></lottie-player>
+    <lottie-player id='confettiFullScreen' class="displayoff" src="https://assets10.lottiefiles.com/private_files/lf30_kvdn44jg.json"  background="transparent"  speed="1"  style="position: absolute; z-index: 1; width: 100%; width: 100vw;"  loop autoplay></lottie-player>
+    <lottie-player id='confettiRight' class="displayoff" src="https://assets2.lottiefiles.com/packages/lf20_rovf9gzu.json"  background="transparent"  speed="1"  style="position: absolute; z-index: -1; width: 100%; width: 100vw;"  loop autoplay></lottie-player>
+    <lottie-player id='crackers' class="displayoff animate__animated animate__zoomIn animate__delay-3s animate__infinite " src="https://assets10.lottiefiles.com/packages/lf20_a8czjo3v.json"  background="transparent"  speed="1"  style="position: absolute; z-index: 2; width: 100%; width: 100vw;"  loop autoplay></lottie-player>
+    <!-- <lottie-player id='giftBox' class="" src="https://assets9.lottiefiles.com/packages/lf20_8iczykai.json"  background="transparent"  speed="1"  style="position: absolute; z-index: 2; width: 20%; width: 20vw;"  autoplay></lottie-player> -->
+    
+    <div id="section1" class=" bg-pink-300 container m-auto  p-8 shadow-xl rounded animate__animated animate__delay-1s animate__zoomInDown "> 
+        <div class="bg-pink-200 m-auto text-dark rounded-lg  shadow-xl px-9 py-3 m-6 clickon">
+            <h1 class="header text-5xl">Dear Doctor <br> Arunkumar De,</h1>
+            <p class="subtext text-3xl py-3"><br>Enhancing your connect with your patient<br> on the world wide web</p>
+            <!-- <p class="text-4xl py-5 subtext">- Wallace Pharmaceuticals</p> -->
+            <p></p>
+        </div>
+        <!-- <button  id="btn" v-on:click="toggleAudio()" class="bg-pink-400 rounded text-white font-bold hover:bg-pink-500 p-2 my-5 animate__animated animate__heartBeat animate__delay-5s animate__infinite clickon" >
+            Open My Website
+        </button> -->
+        <div id="animContainer"></div>
+        <div id="siteContainer" class="clickon">
+            <!-- <iframe id="siteFrame" src="https://www.drpushpindersharma.in/" frameborder="0" width="100%" height="300vw" ></iframe> -->
+        </div>
+    </div>
+
+    <div id="section2" class=" displayoff bg-pink-300 container m-auto  p-8 shadow-xl rounded _animate__animated animate__delay-1s animate__zoomInDown grid grid-cols-1 "> 
+        <div class="bg-pink-200 m-auto text-dark rounded-lg  shadow-xl px-9 py-3 m-6 clickon">
+            <h1 class="header text-3xl">Wallace Pharmaceuticals <br>proudly presents,</h1>
+            <p class="subtext text-2sm "><br>Your personalized website: <br> <strong>https://www.drarunkumarde.com/</strong> </p>
+            <!-- <p class="text-4xl py-5 subtext">- Wallace Pharmaceuticals</p> -->
+            <p></p>
+        </div>
+        <button  id="btn" v-on:click="toggleAudio()" class="bg-pink-400 rounded text-white font-bold hover:bg-pink-500 p-2 my-5 animate__animated animate__heartBeat animate__delay-5s animate__infinite clickon" >
+            Click to inaugurate the website
+        </button>
+
+        <div id="brandGrid" class="grid grid-cols-1 md:grid-cols-1">  
+<!-- 
+            <div class="w-24 rounded hover:shadow-2xl">
+                <img src="../../assets/images/bbact.png"
+                    alt="image">
+            </div>
+            <div class="w-24 rounded hover:shadow-2xl">
+                <img src="../../assets/images/colimexdf.png"
+                    alt="image">
+            </div>
+            <div class="w-24 rounded hover:shadow-2xl">
+                <img src="../../assets/images/flucoldaf.png"
+                    alt="image">
+            </div>
+
+            <div class="w-24 rounded hover:shadow-2xl">
+                <img src="../../assets/images/wald3.png"
+                    alt="image">
+            </div>
+
+            <div class="w-24 rounded hover:shadow-2xl">
+                <img src="../../assets/images/zn20.png"
+                    alt="image">
+            </div>
+ -->
+
+
+            <div class="w-full rounded hover:shadow-2xl">
+                <img src="../../assets/images/brand_banner_transparent.png"
+                    alt="image">
+            </div>
+        </div>
+
+
+
+
+        <div id="animContainer"></div>
+        <div id="siteContainer" class="clickon">
+            <!-- <iframe id="siteFrame" src="https://www.drpushpindersharma.in/" frameborder="0" width="100%" height="300vw" ></iframe> -->
+        </div>
+    </div>
+
+
+
+
+
+
+
+ 
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/vue@next"></script>
+    <!-- <script src="../../script.js"></script> -->
+    <script>
+        const bgAudio = new Audio('../../assets/bgaudio_imp_low.mp3');
+        let flag= 0
+        function sleep(ms) {
+             return new Promise(resolve => setTimeout(resolve, ms));
+        }
+        function alertWorld(){
+            alert("Hello, World!");
+        }        
+     
+        const app = Vue.createApp({
+            data() {
+                return {
+                    drName: 'Pankaj Tiwari',
+                    fromName: 'Wallace Pharma'
+                }
+            },
+            mounted:function(){
+                this.activate() //method1 will execute at pageload
+            },
+
+            methods: {
+                activate() {
+                    setTimeout(() => {
+                            document.getElementById("section1").classList.add('animate__zoomOutUp'); 
+                            // add some sort of delay here to show exit of s1 and intro of s2
+                            document.getElementById("section1").classList.add('displayoff'); 
+                            // Finish doing things after the pause
+                            document.getElementById("section2").classList.remove('displayoff'); 
+                            document.getElementById("section2").classList.add('animate__delay-1s'); 
+                            document.getElementById("section2").classList.add('animate__zoomInDown'); 
+
+
+                    }, 10000 );
+                },
+                toggleAudio() {
+                    flag++
+                    bgAudio.play();
+                    console.log("Playing music");
+                    document.getElementById("confettiFullScreen").classList.remove('displayoff');
+                    document.getElementById("confettiRight").classList.remove('displayoff');
+                    document.getElementById("crackers").classList.remove('displayoff');
+                    document.getElementById("btn").classList.remove('animate__shakeX');
+                    document.getElementById("btn").classList.add('animate__heartBeat');
+                    document.getElementById("btn").innerHTML = "Click to open my website";
+
+                    
+
+                    if (flag%2 ===0) {
+                        window.open("https://www.drarunkumarde.com/", "_blank");
+                        bgAudio.pause();
+                    }
+                },
+                playConfettiBurst() {
+                    console.log("conf");
+                }
+
+            }
+        })
+        app.mount('#app')        
+    </script>
+</body>
+</html>

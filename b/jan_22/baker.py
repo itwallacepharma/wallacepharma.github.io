@@ -18,7 +18,8 @@ def saveFile(body,file_name):
 def main():
     # Read the template file
     # userBaseUrlList = []
-    df = pd.read_csv('../../../data/ph_dr_websites_nov_v2.csv')
+    # df = pd.read_csv('../../../data/ph_dr_websites_nov_v2.csv') # used in nov 2021
+    df = pd.read_csv('../../../data/ph_dr_websites_jan.csv') # used in jan 2021
     for i, j in zip(df.user_name, df.user_url):
         with open('templateRes.html', 'r') as f:
             body = f.read()
